@@ -3,10 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Malachi's website</title>
+    <title>Portfolio Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar Styles */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 15px 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: #ddd;
+        }
+
+        /* Welcome Section */
+        #welcome {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #welcome h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        #welcome p {
+            font-size: 1.2rem;
+            max-width: 600px;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 60px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        /* Projects Section */
+        #projects {
+            background-color: #fff;
+        }
+
+        .project {
+            max-width: 600px;
+            margin: 20px 0;
+        }
+
+        .project a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        /* Social Media Section */
+        #social-media {
+            background-color: #f0f0f0;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .social-links a {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            border: 1px solid #333;
+            border-radius: 5px;
+        }
+
+        .social-links a:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        /* Profile Section */
+        #profile {
+            background-color: #fff;
+        }
+
+        #profile p {
+            max-width: 600px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+
+            nav a {
+                font-size: 1rem;
+            }
+
+            #welcome h1 {
+                font-size: 2rem;
+            }
+
+            #welcome p {
+                font-size: 1rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .social-links {
+                gap: 15px;
+            }
+
+            .social-links a {
+                font-size: 1rem;
+                padding: 8px 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #welcome h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            .project a {
+                font-size: 1rem;
+            }
+
+            #profile p {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Malachi's website</h1>
-    <p> hello world</p>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#welcome">Welcome</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#social-media">Social Media</a></li>
+            <li><a href="#profile">Profile</a></li>
+        </ul>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section id="welcome">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Explore my work, connect with me, and learn about my journey as a developer.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <p>Sample Project: A web application built with HTML, CSS, and JavaScript.</p>
+            <a href="https://github.com/yourusername/sample-project" target="_blank">View Project on GitHub</a>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="social-media">
+        <h2>Connect With Me</h2>
+        <div class="social-links">
+            <a href="https://github.com/ChaosCoder25" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/malachi-williams-aa6484350/" target="_blank">LinkedIn</a>
+            <a href="https://www.codewars.com/users/ChaosCoder25" target="_blank">CodeWars</a>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <h2>About Me</h2>
+        <p>I'm a passionate web developer with experience in building responsive and user-friendly websites. My journey in tech started with learning HTML and CSS, and I've since expanded my skills to include JavaScript and various frameworks. I enjoy solving problems and creating projects that make a difference.</p>
+        <p>
+            <a href="resume.html">my resume</a>
+        </p>
+    </section>
 </body>
 </html>
